@@ -1,0 +1,74 @@
+.card {
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body {
+  animation: fadeInLeft 1.5s ease-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.title {
+  font-size: 25px;
+  color: #333;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.card-title:hover {
+  color: #007bff;
+}
+
+.card-text {
+  color: #555;
+  font-size: 16px;
+}
+
+.card-text .status {
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+
+.text .completed {
+  font-size: 20px;
+  color: #28a745;
+}
+
+.text .completed:hover {
+  font-size: 20px;
+  color: #155724;
+}
+
+.text .pending {
+  font-size: 20px;
+  color: #dc3545;
+}
+
+.text .pending:hover {
+  font-size: 20px;
+  color: #721c24;
+}
